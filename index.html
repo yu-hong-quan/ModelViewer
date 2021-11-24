@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model-Viewer插件在Web上渲染3D模型</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="holder">
+        <div id="text">
+            <h1 class="sample-text">Play around with the model on the right!</h1>
+            <h1 class="sample-text">Just watch it rotate on its own or do it yourself with the mouse</h1>
+            <h1 class="sample-text">You can also zoom in the model!</h1>
+        </div>
+        <div id="model">
+            <model-viewer src="./WM161_zhankai_1k.glb" alt="A 3D model of a robot" auto-rotate="" camera-controls="" background-color="#28343a"></model-viewer>
+        </div>
+    </div>
+
+    <!-- Loads model-viewer for modern browsers -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+    <!-- Loads model-viewer for older browsers -->
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</body>
+
+</html>
